@@ -7,6 +7,8 @@
       @onCreateAccount="onCreateAccount"
     />
 
+    <div v-html="thing"></div>
+
     <section>
       <h2>Pages in Storybook</h2>
       <p>
@@ -72,7 +74,13 @@ export default {
       user: null,
     };
   },
-
+computed: {
+  thing() {
+    if (window.localStorage.getItem('test') ) return '<div>exists</div>'
+    else { window.localStorage.setItem('test', '') 
+     return '<div>non</div>' }
+  }
+},
   methods: {
     onLogin() {
       this.user = { name: 'Jane Doe' };
