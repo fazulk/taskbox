@@ -6,7 +6,9 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
   ],
-  framework: "@storybook/vue",
+  framework: "@storybook/vue-webpack5",
+    // options: { fastRefresh: true };
+  
   core: {
     builder: "@storybook/builder-webpack5",
   },
