@@ -1,6 +1,6 @@
 import MyPage from './Page.vue';
 import * as HeaderStories from './Header.stories';
-import { within, userEvent } from '@storybook/testing-library';
+import { within } from '@storybook/testing-library';
 
 export default {
   title: 'Example/Page',
