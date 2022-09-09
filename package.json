@@ -18,7 +18,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook": "sb dev -p 9009 --no-manager-cache",
-    "build-storybook": "build-storybook",
+    "build-storybook": "sb build",
     "init-msw": "msw init public/",
     "chromatic": "chromatic --project-token fzglq6m6yjn --allow-console-errors"
   },
