@@ -32,6 +32,6 @@ LoggedOut.args = {
 
 LoggedIn.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
-  const loginButton = await canvas.getByRole('button', { name: /Log in/i });
-  await userEvent.click(loginButton);
+await canvas.findByRole('button', { name: /Log in/i });
+  // await userEvent.click(loginButton);
 };

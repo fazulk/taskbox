@@ -61,7 +61,6 @@
 </template>
 
 <script>
-import './page.css';
 import MyHeader from './Header.vue';
 
 export default {
@@ -94,3 +93,7 @@ computed: {
   },
 };
 </script>
+
+<style>
+  @import "./test.scss"
+</style>
